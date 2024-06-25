@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Ph Tech Soluções</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- NavBrand -->
+      <h1 id="navbrand">PH Tech Soluções</h1>
+      <!-- Menu Toggle Button -->
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
+      <!-- NavBar -->
+      <nav>
+        <!-- NavLinks -->
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="#about">Sobre</a></li>
+          <li class="nav-link"><a href="#services">Serviços</a></li>
+          <li class="nav-link contact-button">
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HomeSection -->
+    <section id="home">
+      <div class="home-content">
+        <h2>Transformando Ideias em Realidade Digital</h2>
+        <p>Descubra mais <a href="#about" id="link-about">sobre nós</a></p>
+      </div>
+    </section>
+
+    <!-- AboutSection -->
+    <section id="about">
+      <h2>Sobre Nós</h2>
+      <div class="about-content">
+        <img
+          src="img/pedro-henrique.png"
+          alt="Pedro Henrique, fundador da Ph Tech"
+          class="about-img"
+          style="width: 300px; height: 300px"
+        />
+        <p>
+          Pedro Henrique, fundador da Ph Tech, é um jovem empreendedor
+          apaixonado por inovação e tecnologia. Com apenas 22 anos, ele traz uma
+          visão única para o mundo da engenharia de software, combinando
+          criatividade com soluções práticas para problemas complexos.
+        </p>
+        <p>
+          A Ph Tech é uma empresa dedicada a transformar ideias em realidade
+          digital. Nosso foco está em desenvolver soluções personalizadas que
+          impulsionam negócios e elevam experiências de usuário a novos
+          patamares. Com uma equipe de especialistas apaixonados, estamos
+          comprometidos em criar produtos tecnológicos que fazem a diferença.
+        </p>
+      </div>
+    </section>
+
+    <!-- ServicesSection -->
+    <section id="services">
+      <h2>Nossos Serviços</h2>
+      <ul class="services-list">
+        <li>
+          <h3>Criação de Landing Pages</h3>
+          <p>Desenvolvemos páginas de entrada otimizadas para conversão.</p>
+        </li>
+        <li>
+          <h3>Desenvolvimento de Sistemas Web</h3>
+          <p>Construímos sistemas web robustos e escaláveis sob medida.</p>
+        </li>
+        <li>
+          <h3>Desenvolvimento de Sistemas Desktop</h3>
+          <p>
+            Criação de aplicativos desktop eficientes para diversas plataformas.
+          </p>
+        </li>
+        <li>
+          <h3>Consultoria em Desenvolvimento de Software</h3>
+          <p>Aconselhamento especializado para projetos de software.</p>
+        </li>
+        <li>
+          <h3>Desenvolvimento de Aplicativos Mobile</h3>
+          <p>Construção de apps móveis para Android e iOS.</p>
+        </li>
+        <li>
+          <h3>Desenvolvimento de Aplicativos iOS</h3>
+          <p>Criação de apps nativos para dispositivos Apple.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ContactSection -->
+    <section id="contact">
+      <form action="#" id="form-contact">
+        <label for="lead_name">Seu Nome</label>
+        <input type="text" name="lead_name" id="leadNameInput" />
+
+        <label for="lead_email">Seu Email</label>
+        <input type="email" name="lead_email" id="leadEmailInput" />
+
+        <label for="lead_phone">Seu Telefone</label>
+        <input type="tel" name="lead_phone" id="leadPhoneInput" />
+
+        <label for="interest">Serviço desejado</label>
+        <select name="interest" id="interestSelect">
+          <option value=""></option>
+          <option value="landing-page">Criação de Landing Page</option>
+          <option value="sistema-web">Sistema Web</option>
+          <option value="sistema-desktop">Sistema Desktop</option>
+          <option value="aplicativo-mobile">Aplicativos Mobile</option>
+          <option value="aplicativo-ios">Aplicativos iOS</option>
+        </select>
+
+        <label for="lead_history">Conte o que você precisa</label>
+        <textarea
+          name="lead_history"
+          id="leadHistoryText"
+          cols="20"
+          rows="10"
+        ></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 PH Tech Soluções. Todos os direitos reservados.</p>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("zAJZj8pZ6wvRAGxfn");
+      })();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
